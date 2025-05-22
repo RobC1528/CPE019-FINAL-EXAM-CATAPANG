@@ -12,7 +12,7 @@ st.write("Files in directory:", os.listdir())
 
 # Load model
 try:
-    model = load_model("cnn_best_model.h5")
+    model = load_model("cnn_best_model.keras")
 except Exception as e:
     st.error(f"Failed to load model: {e}")
     st.stop()
