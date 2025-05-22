@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 import os
 
-st.title("🌦️ Weather Image Classifier")
+st.title("Weather Image Classifier")
 
 # Debug
 st.write("Files in directory:", os.listdir())
@@ -32,6 +32,6 @@ if uploaded_file is not None:
     try:
         prediction = model.predict(img_array)
         predicted_class = class_names[np.argmax(prediction)]
-        st.markdown(f"### 🧠 Predicted Class: **{predicted_class.upper()}**")
+        st.markdown(f"### Predicted Class: **{predicted_class.upper()}**")
     except Exception as e:
         st.error(f"Prediction failed: {e}")
