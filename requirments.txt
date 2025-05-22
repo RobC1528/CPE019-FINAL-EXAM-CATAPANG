@@ -3,3 +3,4 @@ streamlit
 Pillow
 numpy
 opencv-python-headless
+tensorflow==2.12.0
